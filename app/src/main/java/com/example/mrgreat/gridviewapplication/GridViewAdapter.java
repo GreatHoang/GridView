@@ -1,6 +1,9 @@
 package com.example.mrgreat.gridviewapplication;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -61,9 +64,11 @@ public class GridViewAdapter extends BaseAdapter {
                 @Override
                 public void onClick(View v) {
                     ImageView imageViewCheck = (ImageView)v.findViewById(R.id.imageCheck);
+                    ImageView imageView = (ImageView)v.findViewById(R.id.image1);
                     int check = imageViewCheck.getVisibility();
                     if (check == View.INVISIBLE){
                         imageViewCheck.setVisibility(View.VISIBLE);
+                        imageView.setImageTintList(null);
 
 
                     }else{
