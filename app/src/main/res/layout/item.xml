@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/image1"
+        android:tint="#6cffffff"
+        />
+
+    <TextView
+        android:id="@+id/tView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chuxxxx"
+        android:paddingTop="50dp"
+        android:paddingLeft="50dp"/>
+
+    <ImageView
+        android:id="@+id/imageCheck"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/image2"
+        android:visibility="invisible"/>
+
+</FrameLayout>
